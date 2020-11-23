@@ -4,7 +4,7 @@ RUN apt-get update \
   && apt-get install -y unzip \
   && cpan File::Copy::Recursive File::Glob LWP::Simple TVDB::API Getopt::Long Switch WWW::TheMovieDB JSON::Parse XML::Simple
 
-RUN curl -O https://master.dl.sourceforge.net/project/sorttv/SortTV1.38.zip \
+RUN curl -O -L https://downloads.sourceforge.net/project/sorttv/SortTV1.38.zip \
   && unzip SortTV1.38.zip
 
 
